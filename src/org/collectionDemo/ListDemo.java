@@ -25,7 +25,7 @@ public class ListDemo {
         return this.list = list;
     }
 
-    public void multiplyList(List firstList, List secondList) {
+    public List multiplyList(List firstList, List secondList) {
         thirdList = new ArrayList();
         firstList = generateRandomList();
         secondList = generateRandomList();
@@ -44,6 +44,7 @@ public class ListDemo {
             }
 
         }
+      return thirdList;
     }
 
     private List generateList(int lengthList) {
